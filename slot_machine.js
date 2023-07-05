@@ -1,32 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   var points = parseInt(localStorage.getItem("points")) || 0;
   var results = [];
 
   // Update the points display
   document.getElementById("points").textContent = points;
+
   function spin() {
     var bet = parseInt(document.getElementById("bet").value);
 
     // Check if the user has enough points to place the bet
     if (points < bet) {
-      alert(
-        "Insufficient points. Please place a lower bet or add more points."
-      );
+      alert("Insufficient points. Please place a lower bet or add more points.");
       return;
     }
 
     // Generate random results for each column
     results = [];
     for (var i = 0; i < 3; i++) {
-      var symbols = [
-        "symbol1.png",
-        "symbol2.png",
-        "symbol3.png",
-        "symbol4.png",
-        "symbol5.png",
-        "symbol6.png",
-      ];
-      var randomSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+      var symbols = ["symbol1.png", "symbol2.png", "symbol3.png", "symbol4.png", "symbol5.png", "symbol6.png"];
+      // Increase winning probability to 40%
+      var randomNum = Math.random();
+      var randomSymbol = symbols[Math.floor(randomNum * symbols.length)];
+      // Adjust the probability of winning
+      if (randomNum < 0.4) {
+        randomSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+      }
       results.push(randomSymbol);
     }
 
@@ -49,5 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("points").textContent = points;
   }
 
+  // Add an event listener to the Spin button
   document.getElementById("spin-button").addEventListener("click", spin);
 });
