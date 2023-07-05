@@ -7,3 +7,7 @@ function verifyAge() {
     alert("You must be 18 or older to play the Slot Machine.");
   }
 }
+
+function noAccess() {
+  alert("You must be 18+...");
+}
