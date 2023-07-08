@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 :root {
-	--bgColor: rgb(56, 208, 165);
+	--bgColor: rgb(45, 46, 48);
 
 	--titleBaseTextColor: rgb(203, 255, 231);
 	--titleHoverTextColor: rgb(186, 255, 108);
@@ -139,30 +139,65 @@ body {
 }
 
 #reset-btn:hover {
-	color:rgb(0, 255, 0);
+	color:rgb(0, 4, 255);
 	background-color: whitesmoke;
 }
 
-#stats-title { padding: 0px; }
-
-#stats-title a {
-	color: black;
-	text-decoration: none;
+#stats-title { 
+	padding: 5px; 
 }
 
-#stats-title a:hover{ color: rgb(117, 43, 255); }
+#stats-title a {
+	color: rgb(246, 245, 245);
+	text-decoration:bisque;
+	/* font-family: "Ranchers", cursive; */
+	font-size: 200%;
+}
+
+#reset-stat:hover{ 
+	color: navy;
+	background-color: aqua;
+ }
 
 .game-stats {
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+	flex-direction: row;
+	justify-content: space-evenly;
 	text-align: right;
 }
 
-.ul { text-decoration: underline; }
-
+.ul { 
+	text-decoration: underline; 
+	font-family: Comic Sans MS, cursive;
+	font-weight: bold;
+	font-size: 150%;
+	color:white;
+}
 .number {
 	font-weight: bold;
 	padding-left: 10px;
 	font-size: 1.15em;
+	font-family: Comic Sans MS, cursive;
+	font-size: 130%;
+	color:aliceblue;
+}
+#reset-stat {
+	text-align: center;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	background-color: var(--titleBaseTextColor);
+	border: 3px solid rgba(5, 5, 5, 0.75);
+	border-radius: 10px;
+	padding: 10px;
+	outline: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.rst-button{
+	justify-content: center;
+	display: flex;
+}
+.Stats{
+	flex-direction: column;
 }
