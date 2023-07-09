@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bookman+Old+Style&display=swap');
 
+body {
+  font-family: 'Bookman Old Style', serif;
+}
 :root {
 	--bgColor: rgb(45, 46, 48);
 
@@ -17,7 +21,8 @@
 }
 
 body {
-	background-color: var(--bgColor);
+	/* background-color: var(--bgColor); */
+	background-image: url(./assets/slot\ machine\ bg.jpg);
 	margin: 20px 20px 0px 20px;
 	font-family: system-ui;
 }
@@ -37,7 +42,7 @@ body {
 #ws-hack { visibility:hidden; }
 
 .game-box {
-	background-color: var(--boxBgColor);
+	background-image: url(./assets/slot\ machine\ box.jpg);
 	border: 5px solid var(--boxBdColor);
 	border-radius: 10px;
 	max-width: 400px;
@@ -108,10 +113,14 @@ body {
 #spin-btn:hover { background-color: rgb(140, 251, 255); }
 
 .footer-container {
-	padding: 0px 20px 0px 0px;
+	display: flexbox;
+	flex-wrap: wrap;
+	background-color: #1f1f1f;
+	border-radius: 20px;
+	padding: 0px 10px 0px 0px;
 	bottom: 0;
 	right: 2;
-	width: 100%;
+	width: 98%;
 	height: 220px;
 	font-size: 14px;
 }
@@ -150,7 +159,7 @@ body {
 #stats-title a {
 	color: rgb(246, 245, 245);
 	text-decoration:bisque;
-	/* font-family: "Ranchers", cursive; */
+	font-family: "Bookman Old Style", serif;
 	font-size: 200%;
 }
 
