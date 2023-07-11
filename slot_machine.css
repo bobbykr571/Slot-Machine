@@ -39,6 +39,7 @@ body {
 	text-align: center;
 	margin: 40px;
 	color: var(--titleBaseTextColor);
+	text-decoration: underline;
 }
 
 #ws-hack { visibility:hidden; }
@@ -117,7 +118,8 @@ body {
 .footer-container {
 	display: flexbox;
 	flex-wrap: wrap;
-	background-color: #1f1f1f;
+	
+	background-image: url(./assets/stats.jpg);
 	border-radius: 20px;
 	padding: 0px 10px 0px 0px;
 	bottom: 0;
@@ -171,6 +173,8 @@ padding: 1Øpx;
 	text-decoration:bisque;
 	font-family: "Bookman Old Style", serif;
 	font-size: 200%;
+	background-color: #1f1f1f;
+	
 }
 
 #reset-stat:hover{ 
