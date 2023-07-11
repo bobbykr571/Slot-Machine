@@ -12,4 +12,12 @@ document.getElementById("details-form").addEventListener("submit", function(even
     // Redirect to the slot machine page
     window.location.href = "slot_machine.html";
   });
-  
+  function verifyAge() {
+    var age = prompt("Are you 18 years or older? (Yes/No)").toLowerCase();
+    
+    if (age === "yes") {
+      window.location.href = "slot_machine.html";
+    } else {
+      alert("You must be 18 or older to play the Slot Machine.");
+    }
+  }
