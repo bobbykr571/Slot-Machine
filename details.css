@@ -84,6 +84,7 @@ body
   font-size: 1em;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  transition: 0.4s;
 }
 
 .box form .inputbox input:valid~span,
