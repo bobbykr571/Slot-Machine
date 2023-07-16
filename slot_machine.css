@@ -44,7 +44,8 @@ nav a {
   	float: left;
   	color: white;
   	font-size: 18px;
-	font-weight: bold;
+	/* font-weight: bold; */
+	font-family: 'Poppins', sans-serif;
   	margin-top: 10px;
   	margin-right: 50px;;
 }
