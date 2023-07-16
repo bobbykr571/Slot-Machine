@@ -9,7 +9,7 @@
   }
   
 :root {
-	--bgColor: rgb(45, 46, 48);
+	/* --bgColor: rgb(45, 46, 48); */
 
 	--titleBaseTextColor: rgb(203, 255, 231);
 	--titleHoverTextColor: rgb(186, 255, 108);
@@ -24,8 +24,8 @@
 }
 
 body {
-	/* background-color: var(--bgColor); */
-	background-image: url(./assets/slot\ machine\ bg.jpg);
+	background: url(./assets/slot\ machine\ bg\ \(Large\).jpg);
+  	background-size: auto;
 	margin: 20px 20px 0px 20px;
 	font-family: system-ui;
 }
@@ -44,7 +44,6 @@ nav a {
   	float: left;
   	color: white;
   	font-size: 18px;
-	/* font-weight: bold; */
 	font-family: 'Poppins', sans-serif;
   	margin-top: 10px;
   	margin-right: 50px;;
@@ -153,7 +152,7 @@ nav a {
 	display: flexbox;
 	flex-wrap: wrap;
 	
-	background-image: url(./assets/stats.jpg);
+	/* background-image: url(./assets/stats.jpg); */
 	border-radius: 20px;
 	padding: 0px 10px 0px 0px;
 	bottom: 0;
@@ -207,7 +206,7 @@ padding: 1Øpx;
 	text-decoration:bisque;
 	font-family: "Bookman Old Style", serif;
 	font-size: 200%;
-	background-color: #1f1f1f;
+	/* background-color: #1f1f1f; */
 	
 }
 
