@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,8 @@ body
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-direction: column;
+  gap: 30px;
   background-image: url('assets/bg2.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -31,7 +34,7 @@ body
 {
   position: absolute;
   inset: 4px;
-  background: #0c313c;
+  background: #06181e;
   padding: 50px 40px;
   border-radius: 8px;
   z-index: 2;
@@ -59,36 +62,42 @@ body
 {
   position: relative;
   width: 100%;
-  padding: 20px 10px 10px;
+  padding: 10px 10px 10px;
   background: transparent;
-  border: none;
+  border: 1px solid #3dbdbd;
+  border-radius: 5px;
   outline: none;
   box-shadow: none;
   color: #dce2e3;
   font-size: 1em;
   letter-spacing: 0.05em;
   transition: 0.5s;
-  z-index: 10;
 }
 
 .box form .inputbox span 
 {
   position: absolute;
   left: 0;
-  padding: 20px 10px 10px;
+  padding: 10px 10px 10px;
   color: #3dbdbd;
   pointer-events: none;
   font-size: 1em;
   letter-spacing: 0.05em;
-  transition: 0.5s;
+  text-transform: uppercase;
+  transition: 0.4s;
 }
 
 .box form .inputbox input:valid~span,
 .box form .inputbox input:focus~span 
 {
   color: #3dbdbd;
+  transform: translateX(10px) translateY(-7px);
   font-size: 0.75em;
-  transform: translateY(-34px)
+  padding: 0 10px;
+  background: #06181e;
+  border-left: 1px solid #3dbdbd;
+  border-right: 1px solid #3dbdbd;
+  letter-spacing: 0.2em;
 }
 
 .box form .inputbox i 
@@ -98,7 +107,7 @@ body
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #0d3544;
+  background: transparent;
   border-radius: 4px;
   transition: 0.5s;
   pointer-events: none;
